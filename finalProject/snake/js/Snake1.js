@@ -75,6 +75,7 @@ function Game() {
   // score
     context.fillStyle = 'Black';    
     var foodScore = "Score " + score;
+    
       context.fillText(foodScore, 10, canvas.height-380);
     
 
@@ -95,7 +96,9 @@ function Game() {
     // check collision 
     for (var i = index + 1; i < worm.cells.length; i++) {      
       // reset game
+      
       if (cell.x === worm.cells[i].x && cell.y === worm.cells[i].y) {
+       console.log(foodScore);
         worm.x = 320;
         worm.y = 320;
         worm.cells = [];

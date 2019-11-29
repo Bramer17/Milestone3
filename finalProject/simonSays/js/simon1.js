@@ -40,7 +40,7 @@
 				lightOff();
 		
 				if(squareFlash < level) {
-					 setTimeout(function() { 
+					 var on = setTimeout(function() { 
 						setTimeout(function() { 
 							displaySequence(); 
 							squareFlash++; 
@@ -77,7 +77,7 @@
 							buttonPress++;
 						}, 200);
 					}
-					else {
+					else {						
 						state = 'wait';
 						$('body').removeClass('play');
 						start.text('GAME OVER.');
