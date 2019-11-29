@@ -1,0 +1,43 @@
+#home {
+      width: 350px;
+      height: 350px;
+      background-size: auto 350px;
+      background-repeat: no-repeat;
+      background-color: lightgray;
+      background-position: center;
+      padding: 0;
+      margin: 03;
+      border: 3px solid grey;
+
+    }
+    
+    button {
+      background-color: plum;
+      color: white;
+      border: none;
+      bottom: 0;
+      height: 30px;
+      font-size: 12pt;
+      float: left;
+      width: 90px;
+      margin: 10px 0 0 0;
+    }
+    button:hover {
+      background-color: lavender;
+    }
+
+    button:disabled {
+      background-color: grey;
+    }
+
+    p {
+      font-family:cursive;
+      font-weight: bold;
+      width: 250px;
+      margin: 18px 0 5px 8px;
+      float: left;
+    }
+
+    .game {
+      margin: 0 auto;
+    }

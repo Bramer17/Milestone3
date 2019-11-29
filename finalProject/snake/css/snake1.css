@@ -1,0 +1,18 @@
+body{
+    background:linear-gradient(120deg, #c9eaef 0%, #ffdbe7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+h1{    
+    justify-content:center;
+    color:lightgrey;
+    text-shadow: 1px 1px black;
+    font-size: 1.255em;    
+    text-align: center;
+}
+canvas {
+    margin-top: 25%;
+    background: lightgray;
+    border: 5px solid black;
+  }

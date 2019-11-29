@@ -1,0 +1,230 @@
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+    transform: scale(1.1);
+    margin-left: 20px;
+    padding: 10px;    
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+    margin: 0%;
+}
+@media screen and (max-height: 450px){
+    .sidenav {padding-top:15px;}
+    .sidenav a {font-size: 18px;}
+}
+* {
+    box-sizing: border-box;    
+}
+.column {
+    float: left;   
+    width: 35%;
+    padding:5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+    font-size: 12pt;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(120deg, #c9eaef 0%, #ffdbe7 100%);
+}
+nav {
+	width:100%;
+	height:auto;
+    background-color: lightblue;
+    text-align:left;
+    clear:both;
+    float:left;  
+}
+aside {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+a:link {
+    color:rosybrown; 
+    text-decoration: none;    
+}
+a:active {
+    color: white; 
+    text-decoration: none;   
+}
+a:visited {
+    color:teal; 
+    text-decoration: none;    
+}
+a:hover {    
+    background-image: linear-gradient(120deg,  #ffdbe7 0%, #c9eaef 100%);
+    text-decoration: none; 
+}
+ul {        
+    list-style: none;    
+    display: inline-flex;
+    flex-flow: row wrap;
+    text-align: center;    
+    font-weight:900;
+}
+ul li {
+    background: linear-gradient(0deg, white,black, white); 
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    width: 275px;
+    height: 90px;
+    padding: 20px,0px;
+}
+ul li:hover {
+    background: radial-gradient(180deg,white,#84A7C1);
+    box-shadow: 2px 2px 2px grey;
+}
+ul li a {    
+    color:white; 
+    text-decoration: none;
+}
+ul li:hover a {
+    color:black; 
+    text-decoration: none;
+}
+button{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    display: inline-block;    
+}
+button:hover{
+    background-color: white;
+    color: white;
+    box-shadow: 2px 2px black;
+}
+header{
+	width:100%;
+	margin-top:0%;				   
+}
+h1{
+    font-family: 'Inconsolata', monospace;
+    color:lightgrey;
+    text-shadow: 1px 1px black;
+    font-size: 1.255em;    
+    text-align: center;
+}
+h2{
+    font-family: 'Inconsolata', monospace;
+    color:white;
+    font-size:1.255em;
+    text-shadow: 1px 1px black;
+    letter-spacing: 10px;   
+    text-align: left;
+}
+h3, summary{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    font-size: 1.255em;
+    text-align: left;    
+}
+footer{
+    font-family: 'Inconsolata', monospace;
+    text-align: right;
+    background-color: teal;
+    color:grey;
+    font-size: 1 em;
+    width:100%;    
+    margin-top:100%;
+    margin-bottom: 0%;
+}
+img{        
+    display: flex;          
+}
+#previous{
+    display: inline-block;
+}
+[class*="col-"] {
+    width: 100%; /* this is being overriden in tablet and desktop */
+    float:left; /* setting defaults for everything including tablet and desktop */
+    padding:15px; /* setting defaults for everything including tablet and desktop */
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    h2,h3,summary{ 
+        font-size: 1em;
+    }
+}
+.icon-bar {
+    width: 100%;     
+    overflow: auto; 
+}
+.icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 10%;     
+    padding: 12px 0;
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 25px; 
+}
+.icon-bar a:hover {
+    background-color: #000; 
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}

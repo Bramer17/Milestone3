@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="games" />
+    <meta name="keywords" content="games"/>
+    <title>For Fun</title>
+    <link rel="stylesheet" href="css/interface.css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="witchGame/ReadMeGame1.txt">
+</head>
+<body class="row" onload="startGame()">
+    <header>         
+        <div class="col-1 noprint">
+            <p style="font-size:2em;cursor:pointer;" onclick="openNav()">&#9776;</p>
+        </div>
+    </header>
+<article id="main">
+    <section class="col-10 col-m-12">   
+        <h1 style="font-size:4em;">Witch ride</h1>            
+            
+             <p style="font-size:2em; text-align: right; font-style: italic;"> 
+                <a href="witchGame.html">Link to Witch game</a> 
+                <object width="900" height="900" type="text/plain" data="ReadMeGame1.txt" ></object>                
+            </p>        
+    </section>    
+<nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../interface.html">Home</a>
+        <a href="../witchGame/Game1.html">Witch Ride</a>
+        <a href="../snake/Game2.html">Hungry Worm</a>
+        <a href="../simonSays/Game3.html">Simon Says</a>
+        <a href="../readMe.html">Read Me</a>
+</nav>
+<div id="noprint">
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav(){
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+   
+</div>
+</article> 
+<script src="js/canvasGames.js"></script> 
+</body>
+</html>

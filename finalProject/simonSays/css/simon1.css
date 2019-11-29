@@ -1,0 +1,62 @@
+	body{
+		font-family: cursive;
+		font-size: 2em;
+		color:black;
+		border: 1px 1px 1px  black;
+
+	}
+	#squares {
+		overflow: hidden;
+		width: 280px;
+		float: left;
+		margin-left: 475px;
+	}
+	#squares li {
+		cursor: auto;
+		line-height: 100px;
+		list-style-type: none;
+		height: 100px;
+		float: left;
+		width: 100px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border-radius: 15px 15px 15px 15px;
+        border: 0.01em solid;
+        border-color: #5a5a5a;
+        box-shadow: 0px 3px 3px -1px black;
+	}
+	#squares li.green {
+         background-color: darkgreen; 
+    }
+
+	#squares li.blue { 
+        background-color: darkblue; 
+    }
+
+	#squares li.yellow { 
+        background-color: rgb(204, 204, 8); 
+    }
+
+	#squares li.red {
+         background-color: darkred; 
+	}
+	#squares li.pressed{
+		filter:brightness(500%);
+	}
+	p{
+		text-align: center;
+	}
+    p#start { 
+        cursor: pointer; color: black; 
+    }
+	p#start:hover { 
+        color: grey; 
+    }
+	.play #squares li {
+		cursor: pointer;
+	}
+	.gameOver #squares li {
+		opacity: 0.5;
+	}
+
+		

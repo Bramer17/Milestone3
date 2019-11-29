@@ -1,0 +1,41 @@
+ body{
+        background: linear-gradient(120deg, #c9eaef 0%, #ffdbe7 100%);
+        background-repeat: repeat-y;
+        font-family: cursive;
+        font-size: 14pt;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: 	grey;
+        text-shadow: 2px 1px black;
+    }
+    button{
+        background-color: #070101; 
+        border: 3px solid grey;
+        padding: 1% 1%;
+        margin: 2px;
+        font-size: 1em;
+        color: #ffdbe7 ;
+        text-align: center;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: lightskyblue;
+        color:#ffdbe7;
+    }
+
+    div{
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    canvas{
+        display: inline;
+        border: 10px solid grey;
+    }
+    footer{
+        text-align: center;
+        margin-top: 2%;
+        color: #60060F;
+    }
